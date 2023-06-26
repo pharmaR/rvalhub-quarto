@@ -1,0 +1,35 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    function update_logo_classes(event) {
+      let logo = document.getElementsByClassName("slide-logo")[0];
+      let slide = Reveal.getCurrentSlide();
+
+      if (slide.id == "title-slide") { 
+        logo.classList.add("slide-logo-title");
+      } else {
+        logo.classList.remove("slide-logo-title");
+      }
+    }
+
+    Reveal.on('ready', update_logo_classes);
+    Reveal.on('slidechanged', update_logo_classes);
+  })
+  </script>
+
+  <img class="title-logo" src="_extensions/pharmaR/rvalhub/assets/logo.svg"></img>
+
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+  <p class="author">$author$</p>
+$endfor$
+$for(institute)$
+  <p class="institute">$institute$</p>
+$endfor$
+$if(date)$
+  <p class="date">$date$</p>
+$endif$
+</section>
