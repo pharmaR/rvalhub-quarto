@@ -4,6 +4,8 @@ subtitle: "Title Slide Subtitle"
 author:
   - Author One
   - Another Author
+
+format: rvalhub-revealjs+dark
 ---
 
 ```{r setup}
