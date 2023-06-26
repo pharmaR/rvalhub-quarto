@@ -1,6 +1,6 @@
 # R Validation Hub `quarto` Theme
 
-[preview.webm](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/87b4a5e0-c34d-468a-ada5-4edf5db0ec54)
+[preview.webm](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/cfc056b1-a0d2-411b-be87-aa81f4fdae30)
 
 `format: rvalhub-revealjs+light` (or default alias, `rvalhub-revealjs`)
 ![image](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/dd7aaae5-1a27-40ad-bcea-3906cb71f29b)
@@ -16,7 +16,7 @@ After creating your new quarto presentation, you can add the R Validation Hub
 theme by following a simple, two-step installation process.
 
 ```bash
-quarto add pharmar/rvalhub-quarto
+quarto add pharmaR/rvalhub-quarto
 ```
 
 <details>
@@ -28,7 +28,12 @@ quarto add https://github.com/pharmaR/rvalhub-quarto/archive/refs/heads/main.zip
 
 </details>
 
-After installing, your project should contain a `_extensions/rvalhub` directory.
+After installing, your project should contain a `_extensions/pharmaR/rvalhub` directory.
+
+> ***Note: GitHub Organization Case Sensitivity***  
+> Although `quarto` will gladly install the extension using a case-insensitive
+> GitHub org, assets used throughout the extension will use case-sensitive file paths.
+> Be sure to use the appropriate casing. 
 
 ### Using
 
