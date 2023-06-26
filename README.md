@@ -1,6 +1,12 @@
 # R Validation Hub `quarto` Theme
 
-<screenshots to follow>
+[preview.webm](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/87b4a5e0-c34d-468a-ada5-4edf5db0ec54)
+
+`format: rvalhub-revealjs+light` (or default alias, `rvalhub-revealjs`)
+![image](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/dd7aaae5-1a27-40ad-bcea-3906cb71f29b)
+
+`format: rvalhub-revealjs+dark`
+![image](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/1d495a2d-f2b2-49d9-89e6-931b3f36c971)
 
 ## Getting Started
 
@@ -14,7 +20,7 @@ quarto add pharmar/rvalhub-quarto
 ```
 
 <details>
-<summary>_installing from an archive url_</summary>
+<summary><i>alternatively install from an archive url</i></summary>
 
 ```bash
 quarto add https://github.com/pharmaR/rvalhub-quarto/archive/refs/heads/main.zip
