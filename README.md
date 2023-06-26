@@ -3,10 +3,10 @@
 [preview.webm](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/cfc056b1-a0d2-411b-be87-aa81f4fdae30)
 
 `format: rvalhub-revealjs+light` (or default alias, `rvalhub-revealjs`)
-![image](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/dd7aaae5-1a27-40ad-bcea-3906cb71f29b)
+![image](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/aa4e4790-6ca6-47be-97b5-9b23b2580684)
 
 `format: rvalhub-revealjs+dark`
-![image](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/1d495a2d-f2b2-49d9-89e6-931b3f36c971)
+![image](https://github.com/pharmaR/rvalhub-quarto/assets/18220321/e5185955-97a8-4021-b036-d0a29267cebc)
 
 ## Getting Started
 
@@ -57,4 +57,34 @@ After cloning this repo, you can test it out by running
 
 ```
 quarto preview example.qmd
+```
+
+## Starting a new `quarto` project
+
+### Using `quarto` from the command line
+
+1. Create a new `quarto` project
+
+```
+quarto create  # follow prompts to start a default project
+```
+
+> _change to new project directory_
+
+2. Add `quarto` format extension
+
+```
+quarto add pharmaR/rvalhub-quarto
+```
+
+3. Update your `_quarto.yml` file
+
+```diff
++ format: rvalhub-revealjs
+```
+
+or use the dark variant by using:
+
+```diff
++ format: rvalhub-revealjs+dark
 ```

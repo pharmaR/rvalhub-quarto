@@ -5,7 +5,7 @@ author:
   - Author One
   - Another Author
 
-format: rvalhub-revealjs+dark
+format: rvalhub-revealjs
 ---
 
 ```{r setup}
