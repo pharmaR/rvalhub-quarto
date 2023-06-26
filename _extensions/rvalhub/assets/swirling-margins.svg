@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- rects -->
+  <path 
+    d="M 1000 -1000 L 1000 1000 80 1000 80 -1000 M -1000 -1000 L -1000 1000 -80 1000 -80 -1000"
+    fill="#4D8DC930"
+  >
+    <animateTransform 
+      attributeName="transform" attributeType="XML" type="rotate" repeatCount="indefinite" 
+      from="0 0 50" to="360 0 50" dur="60s"
+    ></animateTransform>
+  </path>
+
+  <path 
+    d="M 1000 -1000 L 1000 1000 85 1000 85 -1000 M -1000 -1000 L -1000 1000 -85 1000 -85 -1000"
+    fill="#4D8DC940"
+  >
+    <animateTransform 
+      attributeName="transform" attributeType="XML" type="rotate" repeatCount="indefinite" 
+      from="60 0 50" to="420 0 50" dur="65s"
+    ></animateTransform>
+  </path>
+
+  <path 
+    d="M 1000 -1000 L 1000 1000 90 1000 90 -1000 M -1000 -1000 L -1000 1000 -90 1000 -90 -1000"
+    fill="#4D8DC950"
+  >
+    <animateTransform 
+      attributeName="transform" attributeType="XML" type="rotate" repeatCount="indefinite" 
+      from="120 0 50" to="480 0 50" dur="70s"
+    ></animateTransform>
+  </path>
+
+  <path 
+    d="M 1000 -1000 L 1000 1000 80 1000 80 -1000 M -1000 -1000 L -1000 1000 -80 1000 -80 -1000"
+    fill="#4D8DC960"
+  >
+    <animateTransform 
+      attributeName="transform" attributeType="XML" type="rotate" repeatCount="indefinite" 
+      from="180 0 50" to="540 0 50" dur="75s"
+    ></animateTransform>
+  </path>
+
+  <path 
+    d="M 1000 -1000 L 1000 1000 85 1000 85 -1000 M -1000 -1000 L -1000 1000 -85 1000 -85 -1000"
+    fill="#4D8DC970"
+  >
+    <animateTransform 
+      attributeName="transform" attributeType="XML" type="rotate" repeatCount="indefinite" 
+      from="240 0 50" to="600 0 50" dur="80s"
+    ></animateTransform>
+  </path>
+
+  <path 
+    d="M 1000 -1000 L 1000 1000 90 1000 90 -1000 M -1000 -1000 L -1000 1000 -90 1000 -90 -1000"
+    fill="#4D8DC980"
+  >
+    <animateTransform 
+      attributeName="transform" attributeType="XML" type="rotate" repeatCount="indefinite" 
+      from="300 0 50" to="660 0 50" dur="85s"
+    ></animateTransform>
+  </path>
+</svg>

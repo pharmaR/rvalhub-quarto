@@ -1,0 +1,63 @@
+/*-- scss:defaults --*/
+$primary: #4d8dc9;
+$secondary: #68b8e5;
+
+$presentation-title-slide-text-align: left;
+$link-color: $primary;
+$code-block-bg: rgba(lighten($primary, 20%), 0.1);
+$code-block-border-color: transparent;
+
+/*-- scss:rules --*/
+.reveal {
+  .slide-logo {
+    max-height: 12.5vh !important;
+    max-width: 20vw !important;
+  }  
+
+  .backgrounds {
+    background-size: cover;
+    background-position-y: center;
+  }
+
+  .slide-logo-title {
+    visibility: hidden;
+  }
+
+  .cell {
+    // echo'ed code blocks
+    .sourceCode {
+      background-color: transparent;
+
+      // only blur and apply colors to code-containing div, otherwise we blur the text as well
+      pre {
+        background-color: rgba($primary, 0.1);
+        backdrop-filter: blur(10px);
+      }
+
+      // line number gutters
+      span > a::before {
+        background-color: rgba($primary, 0.1);
+      }
+    }
+
+    // console code output
+    .cell-output pre {
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+
+      code {
+        background-color: transparent;
+      }
+    } 
+
+    // filename line
+    .code-with-filename-file {
+      background-color: rgba($primary, 0.2);
+      backdrop-filter: blur(10px);
+
+      pre {
+        background-color: transparent;
+      }
+    }
+  }
+}

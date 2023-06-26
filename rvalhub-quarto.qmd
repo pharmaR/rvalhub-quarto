@@ -1,0 +1,63 @@
+---
+title: "Quarto Theme"
+subtitle: "Title Slide Subtitle"
+author:
+  - Author One
+  - Another Author
+---
+
+```{r setup}
+#| echo: false
+#| include: false
+
+# manage thematic manually, in the "Future" this should work out-of-the-box
+# https://github.com/quarto-dev/quarto-cli/issues/482
+library(thematic) 
+library(ggplot2)
+
+thematic_on(
+  fg = "#808080", 
+  accent = "#4d8dc9", 
+  bg = "transparent",
+  font = font_spec(scale = 1.5)
+)
+
+theme_update(
+  panel.background = element_rect(fill = alpha("#808080", 0.05))
+)
+```
+
+## Standard Slide Format
+
+This is how a block of text will appear. Links, such as one to [pharmar.org](https://
+www.pharmar.org), will appear like this.
+
+- Bullet item one
+- Bullet item two
+
+## Plot Output
+
+```{r}
+#| echo: true
+
+library(ggplot2)
+
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point()
+```
+
+## Console Output
+
+Example `base` analogs to common `dplyr` functions:
+
+```{r, filename="script.R"}
+#| echo: true
+
+mtcars |>
+  subset(cyl > 2) |>                           # <1>
+  transform(qmin = qsec / 60) |>               # <2>
+  subset(select = c("mpg", "cyl", "qmin")) |>
+  head()
+```
+1. `subset` can be used as a simple stand-in for `dplyr::filter`
+2. `transform` can be used as a replacement for `dplyr::mutate`

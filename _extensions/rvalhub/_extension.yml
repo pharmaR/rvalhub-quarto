@@ -1,0 +1,54 @@
+title: rvalhub
+author: dgkf
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    revealjs:
+      # general
+
+      self-contained: true
+      theme: [default, custom.scss, custom-light.scss]
+      template-partials:
+        - revealjs-assets/title-slide.html      
+
+      # code
+      highlight-style: arrow
+      code-line-numbers: true
+      code-annotations: hover
+
+      # assets
+      logo: assets/logo.svg
+      background-image: assets/swirling-margins.svg
+
+    revealjs+light:
+      # general
+      self-contained: true
+      theme: [default, custom.scss, custom-light.scss]
+      template-partials:
+        - revealjs-assets/title-slide.html      
+
+      # code
+      highlight-style: arrow
+      code-line-numbers: true
+      code-annotations: hover
+
+      # assets
+      logo: assets/logo.svg
+      background-image: assets/swirling-margins.svg
+
+    revealjs+dark:
+      # general
+      self-contained: true
+      theme: [dark, custom.scss, custom-dark.scss]
+      template-partials:
+        - revealjs-assets/title-slide.html      
+
+      # code
+      highlight-style: ayu
+      code-line-numbers: true
+      code-annotations: hover
+
+      # assets
+      logo: assets/logo.svg
+      background-image: assets/swirling-margins.svg
