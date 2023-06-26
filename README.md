@@ -20,7 +20,7 @@ quarto add pharmar/rvalhub-quarto
 ```
 
 <details>
-<summary>_installing from an archive url_</summary>
+<summary><i>alternatively install from an archive url</i></summary>
 
 ```bash
 quarto add https://github.com/pharmaR/rvalhub-quarto/archive/refs/heads/main.zip
